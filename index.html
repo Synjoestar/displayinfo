@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masjid Al-Kautsar</title>
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .navbar {
+        position: relative;
+        display: flex;
+        height: 50px;
+      }
+
+      .navbar-brand {
+        font-size: 1.5rem;
+        font-weight: bold;
+
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: auto 0;
+      }
+
+      .date {
+        font-size: 1.2rem;
+
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .clock {
+        font-size: 1.2rem;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .content {
+        background-image: url("/assets/masjid4.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        position: relative;
+      }
+
+      .content-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+
+      .content h3 {
+        position: absolute;
+      }
+
+      .prayer-times .row {
+        margin: 0;
+        text-align: center;
+
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+
+      .footer {
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar bg-dark sm-small">
+      <span class="date text-warning" id="date">Tanggal</span>
+      <span class="navbar-brand text-warning">Masjid Al-Kautsar</span>
+      <span class="clock text-warning" id="clock">Jam</span>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+      <div class="content-overlay"></div>
+      <h3></h3>
+    </div>
+
+    <!-- Prayer Times -->
+    <div class="prayer-times text-light">
+      <div class="row">
+        <div class="col bg-primary py-3">
+          Imsyak <br />
+          <span>03:56</span>
+        </div>
+        <div class="col bg-success py-3">
+          Subuh <br />
+          <span>04:04</span>
+        </div>
+        <div class="col bg-warning py-3">
+          Dzuhur <br />
+          <span>11:42</span>
+        </div>
+        <div class="col bg-danger py-3">
+          Ashar <br />
+          <span>15:07</span>
+        </div>
+        <div class="col bg-info py-3">
+          Maghrib <br />
+          <span>17:56</span>
+        </div>
+        <div class="col bg-secondary py-3">
+          Isya <br />
+          <span>19:12</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer bg-dark text-light">&copy;TJKT XI TJKT 3 KELOMPOK 2 | Sholatlah sebelum di sholatkan.</div>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/time.js"></script>
+  </body>
+</html>
